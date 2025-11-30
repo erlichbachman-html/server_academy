@@ -123,11 +123,13 @@ int main()
 
     bind(sock,(struct sockaddr*)&addr,sizeof(addr));
     listen(sock, SOMAXCONN);
+    printf("Сервер слушает на порте : 9090\n");
 
     app_init(&app);
     add_route(&app, "GET","/index.html", handle_index);
     add_route(&app, "ECHO","/echo", handle_echo);
     add_route(&app, "POST","/index.html", handle_post);
+    
 
     while(1)
     {
