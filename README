@@ -36,3 +36,39 @@
 - App 
 - Router  
 
+
+Примеры запросов:
+
+
+Метод: ECHO
+Путь: /echo
+Тело(Если метод GET просто нажми ENTER): hi
+Ответ сервера:
+CHLP/1.0 200 OK
+Body-Size: 2
+
+hi
+
+
+
+--------------------------------
+
+Метод: POST
+Путь: /index.html
+Тело(Если метод GET просто нажми ENTER): Hello from TEST CHLP
+Ответ сервера:
+CHLP/1.0 200 OK
+
+
+--------------------------------
+
+
+
+Метод: GET
+Путь: /index.html
+Тело(Если метод GET просто нажми ENTER): 
+Ответ сервера:
+CHLP/1.0 200 OK
+Body-Size: 31
+
+HELLOsdfsdfHello from TEST CHLP
